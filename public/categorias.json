@@ -1,0 +1,29 @@
+[
+    {   
+        "id":1,
+        "nombre":"Vehiculos",
+        "imagen":"vehiculo.png"
+    },
+    {
+        "id":2,
+        "nombre":"Tecnología",
+        "imagen":"tecnologia.png"
+    },
+    {
+        "id":3,
+        "nombre":"Herramientas",
+        "imagen":"herramientas.png"
+    },
+    {
+        "id":4,
+        "nombre":"Deportes",
+        "imagen":"deportes.png"
+    },
+    {
+        "id":5,
+        "nombre":"Juguetes",
+        "imagen":"juguetes.png"
+    }
+
+
+]

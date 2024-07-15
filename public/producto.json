@@ -1,0 +1,52 @@
+[
+    {
+       "id":1,
+       "nombre":"Hidrolavadora",
+       "empresa":"Vendedor S.A. DE C.V.",
+       "descripcionCorta":"Hidrolavadora para tareas de limpieza.",
+       "descripcionLarga":"Hidrolavadora para tareas de limpieza.",
+       "imagen":"Hidrolavadora.png",
+       "precio":5000.00,
+       "categoria":3
+    },
+    {
+       "id":2,
+       "nombre":"Soporte Porta Celular",
+       "empresa":"Soportes S.A. DE C.V.",
+       "descripcionCorta":"Soporte Porta Celular Espejo Retrovisor Base Auto Carro 360.",
+       "descripcionLarga":"Soporte Base Porta Celular Espejo Retrovisor Auto Carro 360 Universal GPS Uber Taxi Sujetador Camioneta Holder Coche Giratorio Telefono Ajustable Compatible Con iPhone Android.",
+       "imagen":"soporte.png",
+       "precio":120,
+       "categoria":2
+    },
+    {
+       "id":3,
+       "nombre":"Jersey Visitante",
+       "empresa":"Soportes S.A. DE C.V.",
+       "descripcionCorta":"Jersey Visitante Oficial Hombre Selección De México adidas.",
+       "descripcionLarga":"100% Mexicano. Inspirado en civilizaciones antiguas, este jersey de visitante oficial de México reune el espíritu de lucha necesario para dominar el mundo del fútbol. En medio de ese llamativo diseño, un detalle al interior del cuello muestra el cuerpo de serpiente de Quetzalcoatl, símbolo de las capacidades físicas de la humanidad",
+       "imagen":"deportes.png",
+       "precio":120,
+       "categoria":4,
+       "miniaturas":[
+          {
+             "id":"1",
+             "miniatura":"deportes1.png"
+          },
+          {
+             "id":"2",
+             "miniatura":"deportes2.png"
+          }
+       ]
+    },
+    {
+       "id":4,
+       "nombre":"Laptop Chuwi HeroBook Pro",
+       "empresa":"Tecnotodo S.A. DE C.V.",
+       "descripcionCorta":"Laptop Chuwi HeroBook Pro herobook plus space gray 15.6 Intel Celeron N4020 8GB de RAM 256GB SSD Intel UHD Graphics 600 1920x1080px Windows 11 Home PC.",
+       "descripcionLarga":"Laptop 8gb ram,Laptops rentables con soporte ethernet! Nuevo modelo 2024! Elegante y portátil La Laptop Chuwi Herobook Plus 15.6 es la elección perfecta para aquellos que buscan un rendimiento excepcional y una experiencia de uso fluida. Con su procesador Intel Celeron N4020 de 2 núcleos y 8 GB de memoria RAM DDR4, podrás realizar múltiples tareas sin problemas y disfrutar de un rendimiento rápido y eficiente.",
+       "imagen":"computadora.png",
+       "precio":3839.00,
+       "categoria":2
+    }
+ ]
