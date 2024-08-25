@@ -32,7 +32,7 @@ function BuscarProducto(){
           </Col>
           <Col xs="auto">
           <Link to={`/result/${inputText}`}>
-            <button type="button"  class="btn btn-primary" >Detalles</button>
+            <button type="button"  class="btn btn-primary" >Buscar</button>
           </Link>
              
           </Col>

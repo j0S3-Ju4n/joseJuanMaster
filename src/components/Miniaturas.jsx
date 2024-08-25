@@ -10,11 +10,9 @@ function Miniaturas()
 
    
   let { id } =useParams();
- 
- 
-    
-    useEffect(()=>{
-    fetch('/producto.json')
+   
+  useEffect(()=>{
+    fetch(`http://localhost:8080/backend/productoporid/buscador?id=${encodeURIComponent(id)}`)
     .then(response => {
       if (!response.ok) {
         throw new Error('Network response was not ok');
@@ -22,27 +20,27 @@ function Miniaturas()
       return response.json();
     })
     .then(data => {
-      const filtrarProducto = data.find(producto=> parseInt(producto.id) === parseInt(id));
-      setProductos(filtrarProducto);
-      setLoading(false);
+  
+          setProductos(data);    
+     
     })
     .catch(error => {
       console.error('Hubo un problema con la solicitud fetch:', error);
       setError(error);
       setLoading(false);
-    })  
+    } )  
   },[id]);
 
     const minuatura = producto.miniaturas;
  
-
+    
     return(
         <div className="Row">
             {
                 minuatura?.map(item=>(
-                    <Col key={item.id} >
+                    <Col key={item.idMiniatura} >
                         <div className='row'>
-                        <img variant="top" src={`${process.env.PUBLIC_URL}/imagenes/${item.miniatura}`} width="50px" className="img-fluid"></img>
+                        <img variant="top" src={`${process.env.PUBLIC_URL}/imagenes/${item.imagen}`} width="50px" className="img-fluid"></img>
                         </div>
                     </Col>
                 ))

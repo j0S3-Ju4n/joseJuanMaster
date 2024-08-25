@@ -1,13 +1,13 @@
 [
     {
-        "id": 1,
+        "idProducto": 1,
         "nombre": "Hidrolavadora",       
         "imagen": "Hidrolavadora.png",
         "precio": 5000,
         "cantidad":1
     },
     {
-        "id": 2,
+        "idProducto": 2,
         "nombre": "Soporte para celular",       
         "imagen": "soporte.png",
         "precio": 80,

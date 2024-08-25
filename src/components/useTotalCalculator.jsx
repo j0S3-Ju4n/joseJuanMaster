@@ -8,7 +8,7 @@ const useTotalCalculator = (initialProducts) => {
   const calculateTotal = () => {
     let calculatedTotal = 0;
     products.forEach(product => {
-      calculatedTotal += product.price * product.quantity;
+      calculatedTotal += product.precio * product.cantidad;
     });
     setTotal(calculatedTotal);
   };
@@ -21,7 +21,7 @@ const useTotalCalculator = (initialProducts) => {
   // Función para actualizar la cantidad de un producto por su ID           
   const updateQuantity = (productId, newQuantity) => {
     const updatedProducts = products.map(product =>
-      product.id === productId ? { ...product, quantity: newQuantity } : product
+      product.idProducto === productId ? { ...product, cantidad: newQuantity } : product
     );
     setProducts(updatedProducts);
   };

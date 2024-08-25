@@ -11,14 +11,21 @@ function ListaProductos(){
 
   let { id } =useParams();
 
-  console.log(id)
+  let {text} = useParams();
 
-  let { text } =useParams();
- 
-   console.log(text)
+   let url = `http://localhost:8080/backend/producto/buscador`;
+
+   if(id !== undefined && id!==null){
+    url = `http://localhost:8080/backend/producto/categoria/buscador?idCategoria=${encodeURIComponent(id)}`;
+    console.log(id)
+   }
+   if(text !== undefined && text!==null){
+    url =`http://localhost:8080/backend/productoporText/buscador?text=${encodeURIComponent(text)}`
+    console.log(url)
+   }
   
-  useEffect(()=>{
-  fetch('/producto.json')
+  useEffect(()=>{ 
+  fetch(url)
   .then(response => {
     if (!response.ok) {
       throw new Error('Network response was not ok');
@@ -26,13 +33,7 @@ function ListaProductos(){
     return response.json();
   })
   .then(data => {
-    if(id>0){
-      const filtrarProducto = data.filter(producto=> parseInt(producto.categoria) === parseInt(id));
-      setProductos(filtrarProducto);
-    }   
-    else{ 
-        setProductos(data);    
-    }
+    setProductos(data);    
     setLoading(false);
   })
   .catch(error => {
@@ -40,15 +41,17 @@ function ListaProductos(){
     setError(error);
     setLoading(false);
   } )  
-},[id]);
 
-return (
-    
+
+},[id,text]);
+
+
+
+return ( 
   <Row>    
-  {productos.map(item=>(    
-       ProductoBasic(item)
+  {productos.map(item=>(        
+   ProductoBasic(item)
   ))}
-
 </Row>
 
 );

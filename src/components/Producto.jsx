@@ -9,13 +9,13 @@ function ProductoBasic(item) {
 
 
   return (
-    <Col key={item.id} md={3} className="mb-3"> 
+    <Col key={item.idProducto} md={3} className="mb-3"> 
     <Card style={{ width: '18rem' }}>
       <div className='mx-auto'> 
     <img  variant="top" src={`${process.env.PUBLIC_URL}/imagenes/${item.imagen}`} width="100px" className="img-fluid" />
     </div>
     <Card.Body>
-        <Card.Title>{item.nombre}</Card.Title>
+        <Card.Title>{item.idproducto} - {item.nombre}</Card.Title>
         <Card.Text>
         {item.descripcionCorta}
         </Card.Text>
@@ -25,8 +25,8 @@ function ProductoBasic(item) {
         <ListGroup.Item>{item.empresa}</ListGroup.Item>
     </ListGroup>
     <Card.Body>   
-      <Link to={`/producto/${item.id}`}>
-    <button type="button"  class="btn btn-primary" >Detalles</button>
+      <Link to={`/producto/${item.idProducto}`}>
+    <button type="button"  className="btn btn-primary" >Detalles</button>
     </Link>
     </Card.Body>
     </Card>

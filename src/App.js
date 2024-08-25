@@ -25,6 +25,7 @@ function App() {
               <Route path='/categoria/:id' element={ <ListaProducto/> } /> 
               <Route path='/result/:text' element={ <ListaProducto/> } /> 
               <Route path='/agregar/:id' element={ <Carrito/> } /> 
+              <Route path='carrito' element={ <Carrito/> } /> 
               <Route path='/MisCompras' element={ <MisCompras/> } /> 
               <Route path='*' element={ <Navigate replace to="/" />} /> 
           </Route>

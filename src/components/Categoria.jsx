@@ -5,7 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 function CategoriaBase(item) {
     return (
       <Card style={{ width: '18rem' }}>
-         <Link to={`/categoria/${item.id}`}>
+         <Link to={`/categoria/${item.idcategoria}`}>
        <div className='mx-auto'> 
             <img  variant="top" src={`${process.env.PUBLIC_URL}/imagenes/${item.imagen}`} width="150px" className="img-fluid" />
         </div>
